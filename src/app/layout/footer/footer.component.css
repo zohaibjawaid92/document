@@ -1,0 +1,48 @@
+footer {
+  background-color: #3f50b5;
+}
+
+footer {
+  position: relative;
+  line-height: 24px;
+  line-height: 2.4rem;
+  flex: 1;
+  padding: 48px;
+  z-index: 0;
+  font-weight: 300;
+}
+
+footer {
+  display: block;
+}
+footer div {
+  position: relative;
+  z-index: 0;
+}
+
+footer div p {
+  text-align: center;
+  margin: 10px auto 5px;
+}
+
+footer div>* {
+  color: #fff;
+}
+
+footer div>* {
+  max-width: 50em;
+}
+
+p, ol, ul, li, input, a {
+  font-size: 1rem;
+  line-height: 3.2rem;
+  font-family: inherit;
+  font-weight: 400;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

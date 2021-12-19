@@ -1,0 +1,25 @@
+<div class="form">
+    <div style="margin-bottom: 34px;">
+        <p>Pleae Login to the site and access more content</p>
+        <h1>Login</h1>
+    </div>
+    <hr>
+    <form  class="formGroup" [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
+        <div class="form-group divInput">
+          <input type="text" class="form-control" id="name" 
+            placeholder="Username" formControlName="name" />
+            <label for="name">Enter your username</label>
+        </div>
+    
+        <div class="form-group divInput">
+          <input type="password" class="form-control" id="email" 
+            placeholder="Password" formControlName="email" />
+            <br>
+            <label for="name">Email Passowrd</label>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+            <button mat-stroked-button color="primary">Need Help?</button>
+            <button mat-raised-button type="submit" color="primary">Sign In</button>
+        </div>
+      </form>
+</div>

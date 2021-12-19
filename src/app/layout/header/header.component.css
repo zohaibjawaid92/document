@@ -1,0 +1,317 @@
+@media (min-width: 481px){
+    .page-home mat-toolbar.app-toolbar:not(.transitioning) {
+      background-color: transparent;
+      box-shadow: none;
+      position: absolute;
+      transition: background-color .2s linear;
+    }
+  }
+  
+  mat-toolbar.app-toolbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+  }
+  
+  .mat-toolbar-multiple-rows {
+    min-height: 64px;
+  }
+  
+  .mat-toolbar-multiple-rows {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  
+  /* style for button */
+  
+  
+  
+  
+  .mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+  }
+  
+  /* style for mat-icon */
+  
+  .mat-button .mat-button-wrapper>*, .mat-flat-button .mat-button-wrapper>*, .mat-stroked-button .mat-button-wrapper>*, .mat-raised-button .mat-button-wrapper>*, .mat-icon-button .mat-button-wrapper>*, .mat-fab .mat-button-wrapper>*, .mat-mini-fab .mat-button-wrapper>* {
+    vertical-align: middle;
+  }
+  
+  
+  .mat-button .mat-button-focus-overlay, .mat-icon-button .mat-button-focus-overlay {
+    opacity: 0;
+  }
+  
+  
+  /* style end of button */
+  
+  mat-toolbar.app-toolbar mat-toolbar-row {
+    padding: 0 16px 0 0;
+  }
+  
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    height: 64px;
+  }
+  
+  
+  mat-toolbar.app-toolbar div.search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    min-width: 150px;
+    height: 100%;
+    margin-right: 16px;
+    position: relative;
+  }
+  
+  
+  mat-toolbar.app-toolbar div.search-container input {
+    border: none;
+    border-radius: 100px;
+    padding: 5px 16px;
+    margin-left: 8px;
+    width: 180px;
+    max-width: 240px;
+    height: 50%;
+    -webkit-appearance: none;
+  }
+  
+  @media (min-width: 1000px){
+    mat-toolbar.app-toolbar div.search-container input {
+      transition: width .4s ease-in-out;
+    }
+  }
+  
+  
+  /* style for list */
+  
+  
+  mat-toolbar.app-toolbar div ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+  }
+  
+  mat-toolbar.app-toolbar div ul li {
+    padding-bottom: 2px;
+    list-style-type: none;
+    cursor: pointer;
+  }
+  
+  mat-toolbar.app-toolbar div ul li a.nav-link {
+    margin: 0 4px;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .app-toolbar a {
+    color: #fff;
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+  
+  mat-toolbar.app-toolbar div ul li a.nav-link .nav-link-inner {
+    border-radius: 4px;
+    font-size: 1.3rem;
+    font-size: clamp(10px,1.6rem,20px);
+    padding: 8px 16px;
+    padding: 8px clamp(5px,0.7vw,16px);
+  }
+  
+  #nav-menu:first-of-type {
+    margin-top: 16px;
+  }
+  
+  #nav-menu {
+    display: block;
+    margin: 0 2px;
+    max-width: 268px;
+  }
+  
+  #nav-menu #nav-item button.vertical-menu-item {
+    border: none;
+  }
+  
+  #nav-menu #nav-item .vertical-menu-item {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+    padding: 8px;
+    text-decoration: none;
+    text-align: left;
+    width: 100%;
+    word-wrap: break-word;
+  }
+  
+  #nav-menu #nav-item .heading-children.collapsed {
+    overflow: hidden;
+    visibility: hidden;
+    padding-left: 0;
+    opacity: 0;
+    max-height: 1px;
+    transition: visibility 275ms,opacity 275ms,max-height .28s;
+    transition-timing-function: ease-out;
+  }
+  
+  
+  #nav-menu #nav-item .level-1.expanded>.mat-icon, #nav-menu #nav-item .level-2.expanded>.mat-icon, #nav-menu #nav-item .level-3.expanded>.mat-icon {
+    transform: rotate(90deg);
+    transition: transform .15s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  #nav-menu #nav-item .vertical-menu-item .mat-icon {
+    flex: 0 0 2.4rem;
+    display: flex;
+    align-items: initial;
+  }
+  
+  /* content */
+  .sidenav-content {
+    display: block;
+    min-height: 100vh;
+    padding: 80px 3rem 2rem;
+    max-width: 50em;
+    margin: 0 auto;
+  }
+  
+  
+  /* body */
+  
+  html, body {
+    height: 100%;
+  }
+  html, body, .content {
+    background: #303030;
+  }
+  
+  body {
+    font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    margin: 0;
+    font-size: 16px;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  
+  @media (min-width: 1150px){
+    mat-toolbar.app-toolbar #hamburger {
+      margin: 0 16px 0 -64px;
+    }
+  }
+  @media (max-width: 1150px){
+    mat-toolbar.app-toolbar #hamburger {
+      height: 100%;
+      margin: 0 8px 0 0;
+      padding: 0;
+    }
+  }
+  
+  /* sidenav */
+  
+  mat-sidenav-content {
+    height: calc(100vh - 64px - 162px);
+    margin-top: 64px;
+  }
+  
+  mat-sidenav-container mat-sidenav {
+    background-color: #f2f2f2;
+    border-right: 1px solid #DBDBDB;
+  }
+  
+  mat-sidenav-container mat-sidenav {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    min-width: 260px;
+  }
+  
+  /* footer */
+  footer {
+    background-color: #0d47a1;
+  }
+  
+  footer {
+    position: absolute;
+      line-height: 24px;
+      line-height: 2.4rem;
+      padding: 48px 0px;
+      z-index: 0;
+      font-weight: 300;
+      bottom: 0px;
+      width: 100%;
+  }
+  
+  footer {
+    display: block;
+  }
+  footer div {
+    position: relative;
+    z-index: 0;
+  }
+  
+  footer div p {
+    text-align: center;
+    margin: 10px auto 5px;
+  }
+  
+  footer div>* {
+    color: #fff;
+  }
+  
+  footer div>* {
+    max-width: 50em;
+  }
+  
+  p, ol, ul, li, input, a {
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 400;
+  }
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  
+  

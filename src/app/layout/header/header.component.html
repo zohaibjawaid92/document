@@ -1,0 +1,47 @@
+<mat-toolbar color="primary" class="mat-toolbar app-toolbar no-print mat-primary mat-toolbar-multiple-rows">
+    <mat-toolbar-row class="mat-toolbar-row">
+      <button id="hamburger" at-button   title="Docs menu" class="mat-focus-indicator hamburger mat-button mat-button-base">
+        <span class="mat-button-wrapper">
+          <mat-icon role="img" svgicon="menu" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="menu">
+            <svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+        </mat-icon>
+        </span>
+        <span matripple="" class="mat-ripple mat-button-ripple"></span>
+        <span class="mat-button-focus-overlay"></span>
+      </button>
+      <a routerLink="/">
+        <img
+          style="vertical-align:middle"
+          width="40"
+          alt="Angular Logo"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+        />
+      </a>
+      <div class="ng-star-inserted">
+        <ul role="navigation">
+          <li class="ng-star-inserted"><a class="nav-link" routerLink="/docs" title="Features."><span class="nav-link-inner">Features</span></a></li>
+          <li class="ng-star-inserted"><a class="nav-link" routerLink="/docs" title="Docs."><span class="nav-link-inner">Docs</span></a></li>
+          <li class="ng-star-inserted"><a class="nav-link" routerLink="/docs" title="About."><span class="nav-link-inner">About</span></a></li>
+        </ul>
+      </div>
+      <div class="search-container">
+        <input type="search" aria-label="search" placeholder="Search">
+      </div>
+      <button mat-icon-button="" [matMenuTriggerFor]="menu" type="button" class="mat-focus-indicator mat-icon-button mat-button-base">
+        <span class="mat-button-wrapper">
+          <mat-icon role="img" class="mat-icon notranslate material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">
+            account_circle
+          </mat-icon></span><span matripple="" class="mat-ripple mat-button-ripple mat-button-ripple-round">
+        </span>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/profile">Profile</button>
+        <button mat-menu-item routerLink="/login">SignIn</button>
+        <button mat-menu-item routerLink="/signup">SignUp</button>
+        <button mat-menu-item routerLink="/mysubscription">My Subscriptions</button>
+     </mat-menu> 
+
+    </mat-toolbar-row>
+  </mat-toolbar>

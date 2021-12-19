@@ -1,0 +1,76 @@
+<mat-sidenav-container role="main">
+  <mat-sidenav #snav mode="side" opened="false" class="sidenav">
+    <div id="third" cdkscrollable class="mat-drawer-inner-container ">
+      <div id="nav-menu" class="">
+        <div id="nav-item" class="ng-star-inserted">
+          <div class="ng-star-inserted">
+            <a class="vertical-menu-item level-1 expanded selected" routerLink="/docs" title="Welcome to the Angular documentation set.">
+              <span style="font-size: 16px;">Introduction</span>
+            </a>
+          </div>
+        </div>
+        <div id="nav-item" class="ng-star-inserted">
+          <div class="ng-star-inserted">
+            <a class="vertical-menu-item level-1 expanded selected" routerLink="/docs" title="Welcome to the Angular documentation set.">
+              <span style="font-size: 16px;">Features</span>
+            </a>
+          </div>
+        </div>
+        <div id="nav-item" class="ng-star-inserted">
+          <div class="ng-star-inserted">
+            <button type="button" id="first-button" (click)="first()" class="vertical-menu-item heading ng-star-inserted level-1 collapsed" title="" aria-pressed="false">
+              <span style="font-size: 16px;">Understanding the language</span>
+              <mat-icon role="img" svgicon="keyboard_arrow_right" class="mat-icon notranslate rotating-icon mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="keyboard_arrow_right">
+                <svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path>
+                </svg>
+              </mat-icon>
+            </button>
+            <div id="first-children" class="heading-children level-1 collapsed">
+              <div id="nav-item" class="ng-star-inserted">
+                <div class="ng-star-inserted">
+                  <a class="vertical-menu-item level-2 collapsed" routerLink="/components" title="A brief description of the Angular platform.">
+                    <span style="font-size: 14px;">Components</span>
+                  </a>
+                </div><!----><!---->
+              </div>
+              <div id="nav-item" class="ng-star-inserted">
+                <div class="ng-star-inserted">
+                  <a class="vertical-menu-item level-2 collapsed" routerLink="/docs" title="A brief description of the Angular platform.">
+                    <span style="font-size: 14px;">Templates</span>
+                  </a>
+                </div><!----><!---->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="nav-item" class="ng-star-inserted">
+          <div class="ng-star-inserted">
+            <button type="button" id="second-button" (click)="second()" class="vertical-menu-item heading ng-star-inserted level-1 collapsed" title="" aria-pressed="false">
+              <span style="font-size: 16px;">The importance</span>
+              <mat-icon role="img" svgicon="keyboard_arrow_right" class="mat-icon notranslate rotating-icon mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="keyboard_arrow_right">
+                <svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path>
+                </svg>
+              </mat-icon>
+            </button>
+            <div id="second-children" class="heading-children level-1 collapsed">
+              <div id="nav-item" class="ng-star-inserted">
+                <div class="ng-star-inserted">
+                  <a class="vertical-menu-item level-2 collapsed" routerLink="/docs" title="A brief description of the Angular platform.">
+                    <span style="font-size: 14px;">Importance</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="padding-top: 300px; text-align: center;">
+      <div style="font-size: 5vw; line-height: 1;">This is the body of the page</div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
